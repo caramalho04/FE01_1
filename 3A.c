@@ -1,20 +1,17 @@
-//calcule consumo aos 100km
+//calcular consumo de combustivel
+
 #include <stdio.h>
-#include <locale.h>
 
 int main(){
-    setlocale(LC_ALL, "Portuguese");
-    int litros_consumidos, km_percorridos;
-    float consumo;
+    float a,b,x;
 
-    printf("Digite a quantidade de litros consumidos: ");
-    scanf("%d",&litros_consumidos);
+    printf("Introduza a distancia percorrida\n");
+    scanf("%f", &a);
 
-    printf("Digite a quantidade de km percorridos: ");
-    scanf("%d",&km_percorridos);
+    printf("Introduza o combustivel gasto\n");
+    scanf("%f", &b);
 
-    consumo = (litros_consumidos*100)/km_percorridos;
+    x=b/a*100;
 
-    printf("O consumo de combustivel = %.2f litros por 100km",consumo);
-
+    printf("Consumo= %.2f", x);
 }
