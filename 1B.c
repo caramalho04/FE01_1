@@ -2,7 +2,7 @@
 
 int main(){
     float t1,t2, notafinal;
-    char  nome;
+    char  nome[20];
 
     printf("Introduza o nome do aluno:\n");
     scanf("%s", &nome);
@@ -15,5 +15,5 @@ int main(){
 
     notafinal = (t1*0.4) + (0.6*t2);
 
-    printf("A nota final do %c = %f",nome ,notafinal);
+    printf("A nota final do %s = %f",nome ,notafinal);
 }
